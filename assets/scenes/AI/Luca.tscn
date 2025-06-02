@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtrs4l7lmatny"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uhaub"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_uhaub"]
+size = Vector3(20, 20, 2.65)
+
+[node name="Luca" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_uhaub")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CollisionShape2D"]
+mesh = SubResource("BoxMesh_uhaub")

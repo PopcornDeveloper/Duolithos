@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dglelhwj5qs5d"]
+
+[ext_resource type="PackedScene" uid="uid://dllvgt6ajq5v4" path="res://assets/scenes/player.tscn" id="1_wqjj5"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_0ub2y"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(9.62026, 34.9431)
+rotation = 4.67225
+scale = Vector2(36.3011, 33.8407)
+mesh = SubResource("TorusMesh_0ub2y")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_wqjj5")]
